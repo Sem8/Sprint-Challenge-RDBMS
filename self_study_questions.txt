@@ -1,0 +1,25 @@
+1. Explain the difference between RDBMS and SQL.
+
+1an. RDBMS is relational database management system A relational database management system is a program that allows you to create, update, and
+administer a relational database which is a structured set of data stored in a computer that allows us to identify and access data in relation 
+to another piece of data. Most relational database management systems use the SQL language to access the database. SQL (Structured Query 
+Language) is a programming language used to access the data in tables in a relational database management system
+
+
+
+2. Why do tables need a primary key?
+
+2an. Because it ensures row-level accessibility. If you choose an appropriate primary key, you can specify a primary key value, which lets you 
+query each table row individually and modify each row without altering other rows in the same table. Also it can be used to allow accessibility 
+or have a relationship to another table as a foreign key. 
+
+
+3. What is the name given to a table column that references the primary key on another table?
+
+3an. Foreign key.
+
+
+4. What do we need in order to have a many to many relationship between two tables.
+
+4an. Third table, called a join table that includes a match field that contains the value of the primary keys (in the form of foreign keys) 
+of the two tables it joins.
