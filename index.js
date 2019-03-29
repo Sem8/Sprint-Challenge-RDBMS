@@ -2,7 +2,7 @@ const express = require("express");
 const helmet = require("helmet");
 
 const projectsRouter = require("./routers/projects-router");
-const actionsRouter = require('./routers/actions-router');
+const actionsRouter = require("./routers/actions-router");
 
 const server = express();
 
@@ -15,8 +15,8 @@ server.get("/", (req, res) => {
   );
 });
 
-server.use('/api/projects', projectsRouter);
-server.use('/api/actions', actionsRouter);
+server.use("/api/projects", projectsRouter);
+server.use("/api/actions", actionsRouter);
 
 const port = process.env.PORT || 5000;
 server.listen(port, function() {
